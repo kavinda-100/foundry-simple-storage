@@ -1,3 +1,7 @@
 1. deployed contracts - forge create SimpleStorage --broadcast  --interactive
 
 2. by script - forge script script/DeploySimpleStorage.s.sol --rpc-url http://127.0.0.1:8545 (while running anvil)
+
+3. for Selpolia test net -  
+             i. source .env (load the .env to the terminal)
+            ii. forge script script/DeploySimpleStorage.s.sol --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast ($SEPOLIA_RPC_URL, $PRIVATE_KEY are load from .env file)
